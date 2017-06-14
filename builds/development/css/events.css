@@ -2724,7 +2724,7 @@ table {
 
 html {
   background-color: #3b3b3b;
-  color: #fff;
+  color: #000;
   font-size: 100%;
 }
 
@@ -2936,6 +2936,25 @@ u {
   -o-transition-duration: .3s;
   transition-duration: .3s;
   -ms-transition-duration: .3s;
+}
+
+.nav-skipto {
+  position: absolute;
+  bottom: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  z-index: 2;
+  background-color: #000;
+  border: solid 1px #c28e0e;
+}
+
+.nav-skipto:link, .nav-skipto:visited, .nav-skipto:hover, .nav-skipto:active {
+  color: #fff;
+}
+
+.nav-skipto:focus {
+  bottom: initial;
+  top: 0;
 }
 
 .goldbar {
@@ -4782,4 +4801,15 @@ u {
   .bottom {
     font-size: 0.55556em;
   }
+}
+
+.dropdown-toggle:focus {
+  outline-color: #3b99ff;
+  outline-style: auto;
+  outline-width: 5px;
+  outline-offset: -2px;
+}
+
+.navbar-toggle:focus {
+  text-decoration: underline;
 }
